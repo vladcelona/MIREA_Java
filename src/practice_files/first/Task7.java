@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Task7 {
 
-    public static Scanner scan = new Scanner(System.in);
+    public static final Scanner scan = new Scanner(System.in);
 
     public static void main(String[] args) {
         int number = scan.nextInt(); // Здесь можно указать любое число, для которого нужно вычислить факториал
@@ -18,8 +18,10 @@ public class Task7 {
         }
 
         long result = 1;
-        for (int i = 1; i <= n; i++) {
+        int i = 1;
+        while (i < n + 1) {
             result *= i;
+            i++;
         }
 
         return result;

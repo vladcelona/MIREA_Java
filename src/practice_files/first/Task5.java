@@ -4,8 +4,8 @@ public class Task5 {
     public static void main(String[] args) {
         System.out.println("Command line arguments: ");
 
-        for (int i = 0; i < args.length; i++) {
-            System.out.print(args[i]);
+        for (String arg : args) {
+            System.out.print(arg);
             System.out.print(" ");
         }
     }

@@ -4,8 +4,11 @@ import java.util.Scanner;
 
 public class Task4 {
 
+    private static final Scanner scanner = new Scanner(System.in);
+
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+
+
         System.out.print("Введите количество элементов массива: ");
         int n = scanner.nextInt();
         int[] numbers = new int[n];
@@ -31,19 +34,6 @@ public class Task4 {
             }
             i++;
         } while (i < n);
-
-        // Второй вариант с использованием цикла while
-        // int i = 0;
-        // while (i < n) {
-        //     sum += numbers[i];
-        //     if (numbers[i] > max) {
-        //         max = numbers[i];
-        //     }
-        //     if (numbers[i] < min) {
-        //         min = numbers[i];
-        //     }
-        //     i++;
-        // }
 
         System.out.println("Сумма элементов массива: " + sum);
         System.out.println("Максимальный элемент: " + max);
