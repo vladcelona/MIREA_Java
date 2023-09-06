@@ -8,7 +8,6 @@ public class Task4 {
 
     public static void main(String[] args) {
 
-
         System.out.print("Введите количество элементов массива: ");
         int n = scanner.nextInt();
         int[] numbers = new int[n];
